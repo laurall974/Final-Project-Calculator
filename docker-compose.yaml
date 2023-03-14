@@ -1,0 +1,47 @@
+# docker-compose.yaml
+
+# specify the version of Docker Compose
+version: '3'
+
+# define the services to be run
+services: 
+  # MongoDB database service
+  mongodb:
+    # use the official Mongo Docker image
+    image: mongo 
+    # create a volume named "data_mongodb" to persist data
+    volumes:
+      - data_mongodb:/data/db 
+    # allow connections from any IP address
+    command: mongod --bind_ip_all 
+    # specify the network for the service
+    networks: 
+      - flouwork 
+      
+  # calculator-app service
+  calculator-app:
+    # build the service from the current directory
+    build: . 
+    # create a volume that maps the local directory "./Pictures" to "/app/images" inside the container
+    volumes:
+      - ./Pictures:/app/images
+    # expose port 8080 on the container and map it to port 8081 on the host
+    ports:
+      - "8081:8080" 
+    # specify that the service depends on the MongoDB service
+    depends_on:
+      - mongodb
+    # specify the network for the service
+    networks: 
+      - flouwork 
+
+# define the network for the services
+networks:
+  # create a bridge network named "flouwork"
+  flouwork:
+    driver: bridge
+
+# define the volumes to be created
+volumes: 
+  # create a volume named "data_mongodb" for the MongoDB service
+  data_mongodb:

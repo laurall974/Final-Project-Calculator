@@ -1,0 +1,10 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "description": "My Node.js app with MongoDB and Express",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^4.4.4",
+    "express": "^4.17.1"
+  }
+}
