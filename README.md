@@ -7,8 +7,6 @@ Create a calculator container that connects to a mongodb which runs on another c
 
 Add to your application a feature, which adds the images on your host and loads it on a web page. Any changes in this folder should be shown by refreshing the web page. (by using a bind mount) 
 
-Explain how you can migrate it! How to share it with another instance of the same database engine.
-
 ## :construction_worker_woman: Prerequisites
 Be sure to have docker and docker compose installed, check with
 ```
@@ -21,6 +19,11 @@ And then clone it, go to the directory with:
 ```
 git clone git@github.com:<your_github_username>/<project-name>.git
 cd <project-name>
+```
+
+You can also pull the image from the Docker Hub repository 
+```
+docker pull laurall974/calculator-app
 ```
 
 ## :chart_with_downwards_trend: Without Docker compose
@@ -67,6 +70,9 @@ docker compose up -d
 ```
 ## :rocket: Let's go
 The list of calculations is available on [http://localhost:8080](http://localhost:8080) for the `Dockerfile` and . [http://localhost:8080](http://localhost:8080) for `docker-compose.yml`.
+
+:warning: You may not see the calculations training list immediatly since it needs time to be loaded, so you need to refresh the page.
+
 Any changes in the Pictures folder's image will be shown by refreshing the web page [http://localhost:8080](http://localhost:8080).
 :warning: BUT you must rename the picture "my-image.png"
 
