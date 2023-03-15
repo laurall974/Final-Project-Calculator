@@ -21,10 +21,9 @@ cd <project-name>
 ```
 
 ## :chart_with_downwards_trend: Without Docker compose
-1. Pull the docker images (python, mongo)
+1. Pull the docker images (mongo)
 ```
 docker pull mongo
-docker pull node
 ```
 It will pull the latest version as the default one without giving a tag, if you dont have it already.
 
@@ -64,29 +63,41 @@ Use the command
 docker compose up -d
 ```
 ## :rocket: Let's go
-The list of calculations is available on [http://localhost:8080](http://localhost:8080), you can go to [/calculator](http://localhost:8080/text) endpoint to do the calculations on the calculator app. Any changes in the Pictures folder will be shown by refreshing the web page [http://localhost:8080](http://localhost:8080).
+The list of calculations is available on [http://localhost:8080](http://localhost:8080) for the `Dockerfile` and . [http://localhost:8080](http://localhost:8080) for `docker-compose.yml`.
+Any changes in the Pictures folder's image will be shown by refreshing the web page [http://localhost:8080](http://localhost:8080).
+:warning: BUT you must rename the picture "my-image.png"
 
 You can also verify mounts : 
 ```
 docker inspect <your_mongo_container_name>
 ```
-## User Stories ( :heavy_check_mark: : implemented features)
-Your Project should have:
-- At least two containers, one being a database of your choice
-- At least one well-documented Dockerfile and docker-compose.yml (with comments)
-- A volume to make your database persistent and also a bind mount
-- An explicit bridge network for the communications of your containers
-- A Docker Hub public repository for your docker images
-- A GitHub repository with instructions to run your project (The collaboration of
-both contributors should be visible)
-- At least a dependency requiring the installation of an external library/package
+## Implemented features ( :heavy_check_mark: )
 
-You have 10 minutes to present your project (7 minutes of presentation and 3 minutes
-Q&A)
+Your Project should have:
+
+:heavy_check_mark: At least two containers, one being a database of your choice
+
+:heavy_check_mark: At least one well-documented Dockerfile and docker-compose.yml (with comments)
+
+:heavy_check_mark: A volume to make your database persistent and also a bind mount
+
+:heavy_check_mark: An explicit bridge network for the communications of your containers
+
+:heavy_check_mark: A Docker Hub public repository for your docker images
+
+:heavy_check_mark: A GitHub repository with instructions to run your project (The collaboration of
+both contributors should be visible)
+
+:heavy_check_mark: At least a dependency requiring the installation of an external library/package
+
 - Both teammates should explain the technical architecture and how they have collaborated
+
 - Your presentation skills are also evaluated (5 pts) the precision and the accuracy
 of your words are important
+
 - During this presentation you should demonstrate your knowledge of all keys
 concepts seen in this course
-- You are asked to use a medium for your presentation (PowerPoint)
-- The language is English (Non-negotiable)
+
+:heavy_check_mark: You are asked to use a medium for your presentation (PowerPoint)
+
+:heavy_check_mark: The language is English (Non-negotiable)
