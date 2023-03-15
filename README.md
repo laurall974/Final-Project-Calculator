@@ -1,4 +1,7 @@
 # Final Project - Calculator - Cloud Computing  
+
+Céline LIU & Laura LLINARES
+
 ## :star2: Goal
 Create a calculator container that connects to a mongodb which runs on another container, fetches data and shows it on a webpage on your host machine.
 
