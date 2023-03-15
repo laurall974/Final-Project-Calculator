@@ -99,12 +99,12 @@ both contributors should be visible)
 
 :heavy_check_mark: At least a dependency requiring the installation of an external library/package
 
-- Both teammates should explain the technical architecture and how they have collaborated
+:heavy_check_mark: Both teammates should explain the technical architecture and how they have collaborated
 
-- Your presentation skills are also evaluated (5 pts) the precision and the accuracy
+:heavy_check_mark: Your presentation skills are also evaluated (5 pts) the precision and the accuracy
 of your words are important
 
-- During this presentation you should demonstrate your knowledge of all keys
+:heavy_check_mark: During this presentation you should demonstrate your knowledge of all keys
 concepts seen in this course
 
 :heavy_check_mark: You are asked to use a medium for your presentation (PowerPoint)
