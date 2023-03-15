@@ -74,6 +74,7 @@ The list of calculations is available on [http://localhost:8080](http://localhos
 :warning: You may not see the calculations training list immediatly since it needs time to be loaded, so you need to refresh the page.
 
 Any changes in the Pictures folder's image will be shown by refreshing the web page [http://localhost:8080](http://localhost:8080).
+
 :warning: BUT you must rename the picture "my-image.png"
 
 You can also verify mounts : 
